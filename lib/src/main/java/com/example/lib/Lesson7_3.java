@@ -5,7 +5,7 @@ public class Lesson7_3 {
     public static void main(String[] args) {
 
         Parent parent = new Parent();
-       // Mum mum = new Mum();
+        Mum mum = new Mum();
         checkType(parent);
 
 
@@ -18,7 +18,6 @@ public class Lesson7_3 {
 String getName (String name){
         if (name.isEmpty()){
             return "name can't be empty";
-
 
         }
 
@@ -48,13 +47,13 @@ else  {
 
 }
 
-    class Parent{
+    class Parent {
 
-        void walk (){
+        void walk() {
             System.out.println("parent walk");
 
+        }
     }
-
     class Dad extends Parent{
 
         void walk (){
@@ -76,10 +75,8 @@ void  sleep(){
 
 }
 
-
-
     }
 
 
-    }
+
 
