@@ -1,7 +1,7 @@
 package com.example.lib;
 //Анонимный  класс
 
-public class Lesson_2 {
+public class Lesson7_2 {
 
     private String privateVar = "Hello";
 
@@ -9,8 +9,8 @@ public class Lesson_2 {
     static String staticVar = "Android";
 
     public static void main(String[] args) {
-        Lesson_2 lesson_2 = new Lesson_2();
-        lesson_2.callInnerClass();
+        Lesson7_2 lesson_7_2 = new Lesson7_2();
+        lesson_7_2.callInnerClass();
 
     }
 
