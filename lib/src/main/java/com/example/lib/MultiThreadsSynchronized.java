@@ -30,7 +30,7 @@ CommonResource commonResource;
         synchronized (commonResource){
     commonResource.count =1;
 
-        for (int i =0; i<5; i++){
+        for (int i =1; i<5; i++){
             System.out.printf("%s %d \n ", Thread.currentThread().getName(), commonResource.count);
 
             commonResource.count++;

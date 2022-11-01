@@ -15,17 +15,19 @@ public class MultiThreads {
     }
 
 }
-class ThreadsClass implements  Runnable{
-private  int count =0;
+class ThreadsClass implements  Runnable {
+    private int count = 0;
 
     @Override
     public void run() {
+        synchronized (this) {
 
-        for (int i =0; i<10; i++){
-            count++;
-            System.out.print(count + " ");
+            for (int i = 0; i < 10; i++) {
+                count++;
+                System.out.print(count + " ");
+
+            }
 
         }
-
     }
 }

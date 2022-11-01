@@ -40,7 +40,7 @@ class  Consumer implements  Runnable{
     @Override
     public void run() {
         for (int i =1; i<6; i++){
-            store.put();
+            store.get();
 
         }
     }
@@ -80,7 +80,7 @@ product--;
 
         }
         product++;
-        System.out.println("consumer made 1 product");
+        System.out.println("producer made 1 product");
         System.out.println("products available:" + product);
         notify();
 

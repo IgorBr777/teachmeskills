@@ -21,14 +21,11 @@ class CountThread2 implements  Runnable{
 
     private  int count =0;
     synchronized void changeValue(int addValue){
-        for (int i =0; i<10; i++){
             count=addValue;
-            System.out.println(count + " ");
+            System.out.print(count + " ");
 
         }
 
-
-    }
 
     @Override
     public void run() {
